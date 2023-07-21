@@ -96,8 +96,8 @@ body::before {
 }
 
 #downloadButton {
-    width: 200px;
-    height: 50px;
+    width: 16vw;
+    height: 4vw;
     margin-left: 3vw;
     background-color: #df8e16;
     color: #f1f1e6;
@@ -118,8 +118,8 @@ body::before {
 }
 
 #feedbackButton {
-    width: 200px;
-    height: 50px;
+    width: 16vw;
+    height: 4vw;
     margin-left: 3vw;
     background-color: #f1f1e6;
     color: #df8e16;
@@ -181,7 +181,7 @@ body::before {
 /* ==================================================================================================================================== */
 
 /* For tablets and larger screens */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 576px) and (max-width: 1024px) {
 
     .HeroContent{
         width: 100%;
@@ -262,14 +262,14 @@ body::before {
     #downloadButton {
         margin: 0;
         margin-right: 1vw;
-        width: 190px;
-        height: 50px;
+        width: 20vw;
+        height: 6vw;
         background-color: #df8e16;
         color: #f1f1e6;
-        font-size: 16px;
+        font-size: 2vw;
         font-weight: bold;
         text-align: center;
-        line-height: 40px;
+        line-height: 4vw;
         border-radius: 5vw;
         border: none;
         box-shadow: 3px 4px 10px #161c2d;
@@ -285,14 +285,14 @@ body::before {
     #feedbackButton {
         margin: 0;
         margin-left: 1vw;
-        width: 190px;
-        height: 50px;
+        width: 20vw;
+        height: 6vw;
         background-color: #f1f1e6;
         color: #df8e16;
-        font-size: 16px;
+        font-size: 2vw;
         font-weight: bold;
         text-align: center;
-        line-height: 40px;
+        line-height: 4vw;
         border-radius: 5vw;
         border: none;
         box-shadow: 3px 4px 10px #161c2d;
