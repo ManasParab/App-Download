@@ -1,49 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download To-Do Note App</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download To-Do Note App</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Download To-Do Note App</h1>
-    <p>Please follow the instructions below to download and install the app :</p>
+  <div class="displayInfo">
+    <img src="assets/To_Do_Note_Icon-removebg-preview2.png" class="logo" alt="" />
+    <hr class="line" />
+    <h1 id="introText">
+      Welcome, to <br />
+      <span class="title">To-Do Note App</span>
+    </h1>
+    <hr class="line" />
+    <h1 id="descText">
+      The app that helps you stay organized and productive !
+    </h1>
+
+    <div class="displayButtons">
+      <button id="downloadButton" onclick="downloadApk()">
+        Download Now
+      </button>
+      <a href="https://forms.gle/C5mhSbbiRxuL2BQ17" class="feedbackLink" target="_blank" ><button id="feedbackButton">Give Feedback</button></a>
+      
+    </div>
+  </div>
+
+  <div class="heroImage">
+    <img src="assets/blob.png" class="blob" alt="" />
+
+    <img src="assets/Transparent Bg Samsung Galaxy S23 Mockup.png" alt="" class="nothingMockup" />
+  </div>
+
+  <!-- 
+    <p>Please follow the instructions below to download and install the app:</p>
     <ol>
-        <li>Click the "Download" button below to download the APK file to your device.</li>
-        <li>Open your device's Settings, navigate to "Security" or "Privacy", and enable "Unknown sources" or "Install unknown apps". This allows you to install apps from sources other than the Play Store.</li>
-        <li>Once the download is complete, locate the APK file in your device's Downloads folder or the location where it was saved.</li>
+        <li>
+            Click the "Download" button below to download the APK file to your
+            device.
+        </li>
+        <li>
+            Open your device's Settings, navigate to "Security" or "Privacy", and
+            enable "Unknown sources" or "Install unknown apps". This allows you to
+            install apps from sources other than the Play Store.
+        </li>
+        <li>
+            Once the download is complete, locate the APK file in your device's
+            Downloads folder or the location where it was saved.
+        </li>
         <li>Tap on the APK file to begin the installation process.</li>
         <li>Follow the on-screen prompts to complete the installation.</li>
-    </ol>
+    </ol> -->
 
-    <button id="downloadButton" onclick="downloadApk()">Download My App</button>
+  <script>
+    function downloadApk() {
+      const apkUrl =
+        "https://manasparab.github.io/Android-Mobile-Application-Development/apk/To-Do%20Note.apk"; // Replace with the URL to your APK file
+      const fileName = "To-Do Note.apk"; // Replace 'MyApp' with the desired filename
 
-    <script>
-function downloadApk() {
-    const apkUrl = 'https://manasparab.github.io/Android-Mobile-Application-Development/apk/To-Do%20Note.apk'; // Replace with the URL to your APK file
-    const fileName = 'To-Do Note.apk'; // Replace 'MyApp' with the desired filename
+      fetch(apkUrl)
+        .then((response) => response.blob())
+        .then((blob) => {
+          // Create a temporary anchor element to trigger the download
+          const a = document.createElement("a");
+          const url = window.URL.createObjectURL(blob);
+          a.href = url;
+          a.download = fileName;
+          document.body.appendChild(a);
+          a.click();
 
-    fetch(apkUrl)
-        .then(response => response.blob())
-        .then(blob => {
-            // Create a temporary anchor element to trigger the download
-            const a = document.createElement('a');
-            const url = window.URL.createObjectURL(blob);
-            a.href = url;
-            a.download = fileName;
-            document.body.appendChild(a);
-            a.click();
-
-            // Cleanup
-            window.URL.revokeObjectURL(url);
-            document.body.removeChild(a);
+          // Cleanup
+          window.URL.revokeObjectURL(url);
+          document.body.removeChild(a);
         })
-        .catch(error => {
-            console.error('Error downloading APK:', error);
+        .catch((error) => {
+          console.error("Error downloading APK:", error);
         });
-}
-</script>
-
-    </a>
+    }
+  </script>
 </body>
+
 </html>
