@@ -3,7 +3,8 @@ body {
     padding: 0;
     line-height: 1.6;
     color: #333;
-    background: url('https://manasparab.github.io/App-Download/assets/task bg.jpg') no-repeat center center fixed;
+    background: url("https://manasparab.github.io/App-Download/assets/task bg.jpg")
+        no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -19,9 +20,8 @@ body::before {
     z-index: -1;
 }
 
-.Home{
-    
-    background-color: #0D6B96;
+.Home {
+    background-color: #0d6b96;
     width: auto;
     margin-top: 0vw;
     padding-top: 0;
@@ -29,13 +29,13 @@ body::before {
     z-index: 999;
 }
 
-.displayInfo{
+.displayInfo {
     width: 50%;
     margin-top: 3vw;
     padding-left: 3vw;
 }
 
-.logo{
+.logo {
     width: 20%;
     margin: 1vw auto;
     display: block;
@@ -43,8 +43,7 @@ body::before {
     margin-bottom: 3vw;
 }
 
-
-.line{
+.line {
     width: 88%;
     display: block;
     margin: 1vw auto;
@@ -52,46 +51,44 @@ body::before {
     margin-bottom: 1.5vw;
 }
 
-
 #introText {
-    font-family: 'Tektur', cursive;
-    color: #FFF;
+    font-family: "Tektur", cursive;
+    color: #fff;
     margin-top: 0vw;
     padding-left: 3vw;
     margin-bottom: 1.5vw;
     font-size: 5.8vw;
     line-height: 7vw;
     font-weight: 900;
-    text-shadow: 4px 4px 15px #161C2D;
+    text-shadow: 4px 4px 15px #161c2d;
 }
 
-#introText:hover{
-    text-shadow: 2.5px 2.5px 2px #161C2D;
+#introText:hover {
+    text-shadow: 2.5px 2.5px 2px #161c2d;
 }
 
-.title{
-    color: #FFAD34;
-    text-shadow: 4px 4px 15px #161C2D;
+.title {
+    color: #ffad34;
+    text-shadow: 4px 4px 15px #161c2d;
 }
-
 
 #descText {
-    font-family: 'Tektur', cursive;
-    color: #FFF;
+    font-family: "Tektur", cursive;
+    color: #fff;
     padding-left: 3vw;
     margin-right: 4vw;
     padding-top: 1vw;
     margin-bottom: 2.5vw;
     font-size: 1.5vw;
     font-weight: 400;
-    text-shadow: 4px 4px 10px #161C2D;
+    text-shadow: 4px 4px 10px #161c2d;
 }
 
-#descText:hover{
+#descText:hover {
     text-shadow: 2px 2px 1px rgb(22, 28, 45);
 }
 
-.displayButtons{
+.displayButtons {
     display: inline-block;
     width: 90%;
     align-self: center;
@@ -99,66 +96,64 @@ body::before {
 }
 
 #downloadButton {
-  width: 200px;
-  height: 50px;
-  margin-left: 3vw;
-  background-color: #df8e16;
-  color: #f1f1e6;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 5vw;
-  border: none;
-  box-shadow: 3px 4px 10px #161C2D;
-  cursor: pointer;
-  text-decoration: none;
-  z-index: 999;
+    width: 200px;
+    height: 50px;
+    margin-left: 3vw;
+    background-color: #df8e16;
+    color: #f1f1e6;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5vw;
+    border: none;
+    box-shadow: 3px 4px 10px #161c2d;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 999;
 }
 
 #downloadButton:hover {
-    box-shadow: 1px 2px 1px #161C2D;
+    box-shadow: 1px 2px 1px #161c2d;
 }
 
 #feedbackButton {
-  width: 200px;
-  height: 50px;
-  margin-left: 3vw;
-  background-color: #f1f1e6;
-  color: #df8e16;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 5vw;
-  border: none;
-  box-shadow: 3px 4px 10px #161C2D;
-  cursor: pointer;
-  text-decoration: none;
-  z-index: 999;
+    width: 200px;
+    height: 50px;
+    margin-left: 3vw;
+    background-color: #f1f1e6;
+    color: #df8e16;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5vw;
+    border: none;
+    box-shadow: 3px 4px 10px #161c2d;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 999;
 }
 
 #feedbackButton:hover {
-    box-shadow: 1px 2px 1px #161C2D;
+    box-shadow: 1px 2px 1px #161c2d;
 }
 
-.feedbackLink{
+.feedbackLink {
     text-decoration: none;
 }
 
-.heroImage{
+.heroImage {
     width: 50%;
     float: right;
 }
 
-.blob{
+.blob {
     width: 85%;
     float: right;
     margin-top: -35vw;
     margin-right: 2vw;
-    
 }
-
 
 .nothingMockup {
     width: 60%;
@@ -168,22 +163,194 @@ body::before {
     margin-right: 8.5vw;
     /* Add animation properties */
     animation: floatUpDown 5s infinite;
-  }
-  
-  /* Keyframes for the float up and down animation */
-  @keyframes floatUpDown {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-40px); /* Change the value to control the distance of floating */
-    }
-  }  
-
-p {
-    margin-bottom: 10px;
 }
 
-ol {
-    margin-left: 30px;
+/* Keyframes for the float up and down animation */
+@keyframes floatUpDown {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(
+            -40px
+        ); /* Change the value to control the distance of floating */
+    }
+}
+
+/* ==================================================================================================================================== */
+
+/* For tablets and larger screens */
+@media (max-width: 768px) {
+
+    .HeroContent{
+        width: 100%;
+        margin-top: 4vw;
+    }
+
+    .displayInfo {
+        width: 100%;
+        margin: 1vw auto;
+        padding: 0;
+        
+    }
+
+    .logo {
+        width: 30%;
+        display: block;
+        align-self: center;
+        margin-bottom: 4vw;
+    }
+
+    .line {
+        width: 88%;
+        display: block;
+        margin: 1vw auto;
+        margin-bottom: 2vw;
+    }
+
+    #introText {
+        padding: 0;
+        width: 80%;
+        text-align: center;
+        font-family: "Tektur", cursive;
+        color: #fff;
+        margin: 1vw auto;
+        margin-bottom: 2.5vw;
+        font-size: 7vw;
+        line-height: 8vw;
+        font-weight: 900;
+        text-shadow: 4px 4px 15px #161c2d;
+    }
+
+    #introText:hover {
+        text-shadow: 2.5px 2.5px 2px #161c2d;
+    }
+
+    .title {
+        color: #ffad34;
+        text-shadow: 4px 4px 15px #161c2d;
+    }
+
+    #descText {
+        padding: 0;
+        padding-top: 0;
+        text-align: center;
+        font-family: "Tektur", cursive;
+        color: #fff;
+        width: 80%;
+        margin: 1vw auto;
+        padding-top: 1vw;
+        margin-bottom: 2vw;
+        font-size: 2.5vw;
+        font-weight: 400;
+        text-shadow: 4px 4px 10px #161c2d;
+    }
+
+    #descText:hover {
+        text-shadow: 2px 2px 1px rgb(22, 28, 45);
+    }
+
+    .displayButtons {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        margin: 0vw auto;
+        margin-top: 4vw;
+    }
+
+    #downloadButton {
+        margin: 0;
+        margin-right: 1vw;
+        width: 190px;
+        height: 50px;
+        background-color: #df8e16;
+        color: #f1f1e6;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 5vw;
+        border: none;
+        box-shadow: 3px 4px 10px #161c2d;
+        cursor: pointer;
+        text-decoration: none;
+        z-index: 999;
+    }
+
+    #downloadButton:hover {
+        box-shadow: 1px 2px 1px #161c2d;
+    }
+
+    #feedbackButton {
+        margin: 0;
+        margin-left: 1vw;
+        width: 190px;
+        height: 50px;
+        background-color: #f1f1e6;
+        color: #df8e16;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 5vw;
+        border: none;
+        box-shadow: 3px 4px 10px #161c2d;
+        cursor: pointer;
+        text-decoration: none;
+        z-index: 999;
+    }
+
+    #feedbackButton:hover {
+        box-shadow: 1px 2px 1px #161c2d;
+    }
+
+    .feedbackLink {
+        text-decoration: none;
+    }
+
+    .heroImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 5vw;
+        width: 100%;
+    }
+
+    .blob {
+        width: 80%;
+        display: block;
+        margin: 0;
+    }
+
+    .nothingMockup {
+        width: 50%;
+        margin: 0;
+        display: flex;
+        margin-top: -78vw;
+        /* Add animation properties */
+        animation: floatUpDown 5s infinite;
+    }
+
+    /* Keyframes for the float up and down animation */
+    @keyframes floatUpDown {
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(
+                -40px
+            ); /* Change the value to control the distance of floating */
+        }
+    }
+}
+
+/* For smaller mobile devices */
+@media (max-width: 576px) {
+}
+
+/* For even smaller mobile devices */
+@media (max-width: 360px) {
 }
