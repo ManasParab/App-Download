@@ -4,7 +4,8 @@ body {
     line-height: 1.6;
     color: #333;
     background: url("https://manasparab.github.io/App-Download/assets/task bg.jpg")
-        no-repeat center center fixed;
+        no-repeat fixed;
+        background-position: center;
     background-size: cover;
 }
 
